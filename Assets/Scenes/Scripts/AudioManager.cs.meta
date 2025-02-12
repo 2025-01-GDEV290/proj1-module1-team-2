@@ -3,7 +3,9 @@ guid: cb7ee632b6ed4094e89dffc2548ce287
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - idleSound: {fileID: 8300000, guid: 8db8660c3e6753448a9840558c583e63, type: 3}
+  - movingSound: {fileID: 8300000, guid: 53a73afdffdcd4a4d9262151ba32ad6d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -10,7 +10,7 @@ public class CarMovement : MonoBehaviour
 
     private Rigidbody rb;
 
-    private AudioSource soundSource;
+    //private AudioSource soundSource;
     
     void Start()
     {
@@ -21,16 +21,19 @@ public class CarMovement : MonoBehaviour
     {
         float move = Input.GetAxis("Vertical"); // W/S or Up/Down arrows
         Vector3 moveDirection = transform.forward * move * speed;
-
-        if (Mathf.Abs(move) > .001)
+        Debug.Log(move);
+        if (Mathf.Abs(move) > .01)
         {
             rb.velocity = moveDirection;
             AM.stopIdleSound();
+            AM.playMovingSound();
         }
         else
         {
             rb.velocity = Vector3.Lerp(rb.velocity, Vector3.zero, dragFactor * Time.deltaTime);
+            AM.stopMovingSound(); 
             AM.playIdleSound();
+
         }
           
     }
