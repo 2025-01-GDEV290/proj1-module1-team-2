@@ -1743,7 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleSound: {fileID: 8300000, guid: 8db8660c3e6753448a9840558c583e63, type: 3}
-  movesound: {fileID: 0}
+  movingSound: {fileID: 8300000, guid: 53a73afdffdcd4a4d9262151ba32ad6d, type: 3}
 --- !u!4 &1947214921
 Transform:
   m_ObjectHideFlags: 0
